@@ -88,6 +88,9 @@ border-radius: 6px;
  .align-center{
     align-items: center;
  }
+ .justify-center {
+   justify-content: center;
+ }
  .d-flex {
     display: flex;
  }
@@ -98,11 +101,36 @@ border-radius: 6px;
  .text-center{
     text-align: center;
  }
+ .grid-responsive{
+   display: grid;
+   grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+   grid-column-gap:20px;
+   grid-row-gap:20px;
+ }
+ .d-block {
+   display:block;
+ }
 /* end flex and position  */
 
 /* start container */
 .container {
 padding: 15px 20px;
 }
+.p-b-10{
+   padding-bottom: 10px;
+}
 /* end container 
  */
+
+
+ .c-green {
+   color:var(--green-color) ;
+   background-color: rgba(121, 243, 121, 0.486);
+ }
+ .c-orange {
+   color: orange;
+   background-color:rgba(250, 208, 131, 0.651);
+ }
+ .c-red{
+   color:red
+ }

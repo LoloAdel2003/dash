@@ -1,3 +1,12 @@
+:root {
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --grey-color: #888;
+}
+ 
  * {
     padding: 0;
     margin: 0;
@@ -23,7 +32,7 @@ ul {
 /* start sidbar 
  */
  .sidebar {
-box-shadow:1px 1px 10px #ddd;
+/* box-shadow:1px 1px 10px #ddd; */
 padding: 20px;
  }
  .sidebar h3 {
@@ -117,8 +126,369 @@ margin-right: 15px;
   /* margin-left: 5px; */
   z-index: -1;
   width:100% ;
+  box-shadow:0 0 1px #b2b3b4;
 
   justify-content: space-between;
  }
 
+ header input {
+  border: 1px solid #9e9d9d;
+  border-radius: 10px;
+  padding:10px 0;
+  padding-left: 35px;
+  width: 200px;
+ }
+ header .input i{
+  position:absolute;
+  left:10px;
+  top:50%;
+  transform:translatey(-50%);
+  color:#9e9d9d;
+ }
+ header .icons a:first-child{
+  padding-right: 
+  15px;
+
+ }
+ header .icons  i {
+  /* width: 50px; */
+ }
+
+ header .icons a:first-child::before{
+  content:"";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+right: 15px;
+top:-9px
+
+ }
  /* end header  */
+ /* start section  */
+ .sections h1 {
+font-weight: bold;
+font-size: 40px;
+margin-bottom: 50px;
+ }
+ .sections h1::after {
+content:"";
+position:absolute;
+width:130px;
+height: 5px;
+left:0;
+bottom:-15px;
+background-color: white;
+z-index: 1;
+
+ }
+ .sections h1::before {
+  content:"";
+  position:absolute;
+  width:50px;
+  height: 5px;
+  left:0;
+  bottom:-15px;
+  background-color: black;
+  z-index: 2;
+   }
+   .sections .sec {
+    border-radius: 6px;
+    padding-top: 20px;
+    
+   }
+
+   .sections .sec:first-child{
+    background-color: #dfe2e4;
+   }
+   .sections .sec h3 {
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 25px;
+   }
+   .sections .sec:first-child .wel {
+    justify-content: space-between;
+   }
+   .sections .sec .con span {
+    color: #8d8989;
+    font-size: 14px;
+   }
+   .sections .sec:first-child .name {
+padding: 60px 0 ;
+padding-bottom: 160px;
+   }
+   .sections .sec:first-child .name img {
+    position: absolute;
+    left: 10px;
+    top: -25px;
+
+   }
+   .sections .sec:first-child .name .content{
+    border-top: 1px solid #cec8c8;
+    border-bottom: 1px solid #cec8c8;
+    padding: 20px;
+
+   }
+   .sections .sec:first-child .name .content div {
+    width: calc(100% / 3);
+    text-align: center;
+   }
+   .sections .sec:first-child .name .content div span {
+    display:block;
+
+   }
+   .sections .sec:first-child .name .content div span:first-child{
+    font-weight: bold;
+    font-size: 18px;
+   }
+   .sections .sec:first-child .name .content div span:nth-child(2) {
+    margin-top: 10px;
+    font-size:14px;
+color:
+    #8d8989;
+  }
+.name button {
+  background-color:var(--blue-color);
+  color: white;
+  padding:8px 15px ;
+  border: none;
+  border-radius: 8px;
+  position: absolute;
+  right:10px;
+  bottom:100px;
+  cursor: pointer;
+
+} 
+.name button:hover {
+  background-color: var(--blue-alt-color);
+}
+ 
+/* secound section  */
+.Quick form{
+  margin-top: 10px;
+  position:relative ;
+}
+.Quick form input:first-child,.Quick form textarea{
+  width: 100%;
+  margin: 10px;
+  border:none ;
+  background-color: #e0dddd; 
+  color: var(--grey-color);
+  font-size: 12px;
+  padding: 10px;
+  border-radius: 6px;
+
+}
+.Quick form textarea {
+  padding-bottom: 150px;
+}
+
+.sec{
+  height: 450px;}
+ .Quick input[type="submit"] {
+    background-color:var(--blue-color);
+    color: white;
+    padding:8px 15px ;
+    border: none;
+    border-radius: 8px;
+    position: absolute;
+    right:0;
+    bottom:-40px;
+    cursor: pointer;
+  }
+  /* section 3 */
+  .target .icon{
+    width: 80px;
+    height: 80px;
+    background-color:rgba(149, 195, 248, 0.678);
+    color: var(--blue-color);
+    text-align: center;
+    line-height: 80px;
+
+  }
+  .target .flow {
+    height: 80px;
+    /* line-height: 80px; */
+    /* padding-top: 15px; */
+    padding-left: 15px;
+    width: calc(100% - 80px 
+    );
+
+  }
+  .target .flow span {
+    padding: 5px;
+  }
+  .target .flow span:first-child {
+    color: var(--grey-color);
+ 
+  }
+  .target .flow span:first-child:nth-child(2){
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .target .flow span:last-child {
+    background-color: rgba(149, 195, 248, 0.678);
+    width: 100%;
+/* height:1px; */
+padding: 3px 5px;
+  }
+  .target .flow span.pro{
+    background-color: rgba(255, 166, 0, 0.534);
+  }
+  .target .flow span.team{
+    background-color: rgba(0, 128, 0, 0.329);
+  }
+  .target .flow span.mo:last-child::after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    background-color: var(--blue-color)
+    ;
+    height: 6px;
+    left: 0;
+    top: 0;
+    z-index: 3;
+
+
+  }
+  .target .flow span.pro:last-child::after
+  {
+    width: 55%;
+    content: "";
+    position: absolute;
+   
+    ;
+    height: 6px;
+    left: 0;
+    top: 0;
+    z-index: 3;
+  }
+  .target .flow span.team:last-child::after
+  {
+    width: 75%;
+    content: "";
+    position: absolute;
+   
+    ;
+    height: 6px;
+    left: 0;
+    top: 0;
+    z-index: 3;
+  }
+  .target .flow span.pro::after{
+    background-color: var(--orange-color)
+
+  }
+  .target .flow span.team::after{
+    background-color: green
+
+  }
+  .target .flow span.mo:last-child span {
+background-color: #0d69d5;
+position: absolute;
+width: 40px;
+height: 25px;
+color: white;
+left: calc(80% - 15px);
+top: -40px;
+border-radius: 5px;
+  } 
+  .target .flow span.pro:last-child span{
+    position: absolute;
+    width: 40px;
+    height: 25px;
+    color: white;
+    left: calc(55% - 15px);
+    top: -40px;
+    border-radius: 5px;
+    background-color: orange;
+  }
+  .target .flow span.team:last-child span{
+    position: absolute;
+    width: 40px;
+    height: 25px;
+    color: white;
+    left: calc(75% - 15px);
+    top: -40px;
+    border-radius: 5px;
+    background-color: green;
+  }
+  .target .flow span.pro span{
+    background-color:var(--orange-color)
+  }
+
+  .target .flow span.x::after{
+    content: "";
+position: absolute;
+
+left: calc(50% - 15px);
+bottom: -25px;
+border-radius: 10px;
+
+border-width: 15px;
+border-style: solid;
+border-color: var(--blue-color) transparent transparent transparent;
+/* z-index: -1; */
+  }
+  .target .flow span.t::after{
+    content: "";
+position: absolute;
+
+left: calc(50% - 15px);
+bottom: -25px;
+border-radius: 10px;
+
+border-width: 15px;
+border-style: solid;
+border-color: green transparent transparent transparent;
+/* z-index: -1; */
+  }
+  .target .flow span.y::after{
+    content: "";
+position: absolute;
+
+left: calc(50% - 15px);
+bottom: -25px;
+border-radius: 10px;
+
+border-width: 15px;
+border-style: solid;
+border-color: orange transparent transparent transparent;
+/* z-index: -1; */
+  }
+  
+  .target section div:nth-child(2) .icon {
+    background-color: rgba(255, 166, 0, 0.425);
+  }
+  .target section div:nth-child(3) .icon {
+    background-color: rgba(0, 128, 0, 0.411)}
+ 
+
+.tickets .container{
+  flex-wrap: wrap;
+  
+}
+.tickets .container .st {
+  width: calc(50% - 40px );
+  margin: 10px;
+  border:1px solid var(--grey-color) ;
+  border-radius: 6px;
+  padding: 10px;
+  border-color: var(--grey-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+
+}
+.tickets .container .st span {
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+}
+
+
+
+ /* end section  */
