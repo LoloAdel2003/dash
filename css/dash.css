@@ -182,7 +182,7 @@ margin-bottom: 50px;
 content:"";
 position:absolute;
 width:130px;
-height: 5px;
+height: 3px;
 left:0;
 bottom:-15px;
 background-color: white;
@@ -193,7 +193,7 @@ z-index: 1;
   content:"";
   position:absolute;
   width:50px;
-  height: 5px;
+  height: 3px;
   left:0;
   bottom:-15px;
   background-color: black;
@@ -279,7 +279,7 @@ color:
   width: 100%;
   margin: 10px;
   border:none ;
-  background-color: #e0dddd; 
+  background-color: #e0dddd4f; 
   color: var(--grey-color);
   font-size: 12px;
   padding: 10px;
@@ -302,6 +302,9 @@ color:
     right:0;
     bottom:-40px;
     cursor: pointer;
+  }
+  .Quick input[type="submit"]:hover{
+    background-color: var(--blue-alt-color);
   }
   /* section 3 */
   .target .icon{
@@ -476,12 +479,12 @@ border-color: orange transparent transparent transparent;
   
 }
 .tickets .container .st {
-  width: calc(50% - 40px );
+  width: calc(50% - 20px );
   margin: 10px;
-  border:1px solid var(--grey-color) ;
+  border:1px solid rgba(128, 128, 128, 0.61);
   border-radius: 6px;
-  padding: 10px;
-  border-color: var(--grey-color);
+  padding:20px 10px;
+  /* border-color: var(--grey-color); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -494,6 +497,21 @@ border-color: orange transparent transparent transparent;
   text-align: center;
   padding: 5px;
 }
+.tickets .st span:first-child i {
+  font-size: 25px;
+  
+}
+.tickets .st span:nth-child(2){
+  font-size: 25px;
+  font-weight: bold;
+}
+.tickets .st span:nth-child(3){
+  font-size: 14px;
+  color: var(--grey-color);
+}
+
+
+
 
 
 
