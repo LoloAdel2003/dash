@@ -169,8 +169,14 @@ top:-9px
  /* start section  */
  .sections h1 {
 font-weight: bold;
-font-size: 40px;
+font-size: 35px;
 margin-bottom: 50px;
+ }
+ @media (max-width:767px){
+  .sections h1{
+    font-size: 30px;
+  }
+ 
  }
  .sections h1::after {
 content:"";
