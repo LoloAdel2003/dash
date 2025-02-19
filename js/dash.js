@@ -6,8 +6,9 @@ let searchicon =document.getElementById("search-icon")
 searchicon.onclick= ()=>
     {
         // searchicon.nextElementSibling.placeholder.style.cssText="color:gray "
-        search.style.cssText="border-color:gray;cursor:text"
-
+        search.style.cssText="border-color:gray;cursor:text; padding-left:5px"
+        searchicon.style.display="none"
+        search.focus()
     }
 window.onresize=()=>{
     if(window.innerWidth > 600){
@@ -21,6 +22,8 @@ window.onresize=()=>{
     window.addEventListener("click",(e)=>{
         if (e.target.id !== "search-icon" && e.target.id !== "searchinput" && window.innerWidth <= 600) {       
             searchicon.nextElementSibling.style.cssText = "border-color: transparent; cursor: default";
+            searchicon.style.display="block"
+
         }
         
        if(e.target.id != "specialicon")
