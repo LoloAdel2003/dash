@@ -223,9 +223,6 @@ header .input i {
   15px;
 
  }
- header .icons  i {
-  /* width: 50px; */
- }
 
  header .icons a:first-child::before{
   content:"";
@@ -589,3 +586,82 @@ border-color: orange transparent transparent transparent;
 
 
  /* end section  */
+
+
+
+ /* section setting  */
+ .Setting .sec{
+  height:350px;
+
+ }
+ .Setting .sec .sheck {
+  margin-top:20px;
+  justify-content: space-between;
+
+ }
+ .Setting .sec .sheck h4 {
+  font-weight:200 ;
+  padding: 5px 0 ;
+
+ }
+ .Setting .sec .sheck span {
+  font-size:12px;
+  color :gray
+ }
+ .Setting .sec .sheck .check-icon{
+  /* margin-right:10px; */
+  width:80px;
+  background-color:rgba(128, 128, 128, 0.26);
+  height:30px;
+  padding:5px;
+  border-radius:15px
+ }
+ .Setting .sec .sheck .check-icon i{
+  background-color:white;
+  width:20px;
+  height:20px;
+  border-radius:20px;
+  cursor: pointer;
+  transition:z-index 0s ,right 2s,left  2s;
+  /* left:5px; */
+
+
+ }
+ .Setting .sec .sheck .check-icon i:first-child{
+z-index:-1
+ }
+ .Setting .sec  textarea {
+  margin-top:20px;
+  width:100%;
+  border-color:rgba(128, 128, 128, 0.473);
+  padding:10px;
+  height:150px;
+
+ }
+ .Setting .sec  textarea::placeholder{
+  color:rgba(128, 128, 128, 0.616);
+ }
+
+
+ .sheck button {
+  background-color:var(--blue-alt-color) ;
+  color:white;
+  padding:5px 10px;
+  border:none;
+  border-radius:10px;
+cursor: pointer;
+
+ }
+ .sheck button:hover{
+  background-color:var(--blue-color) ;
+
+ }
+ .Security  .sheck:nth-child(3){
+  border-top:1px solid rgba(128, 128, 128, 0.199);
+  border-bottom:1px solid rgba(128, 128, 128, 0.199);
+  padding:15px 0px;
+
+ }
+
+
+  /*end  section setting  */

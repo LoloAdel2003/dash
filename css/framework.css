@@ -98,6 +98,9 @@ border-radius: 6px;
  .p-relative {
     position: relative;
  }
+ .p-absolute {
+   position: absolute;
+}
  .text-center{
     text-align: center;
  }
