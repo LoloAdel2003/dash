@@ -881,6 +881,16 @@ position:relative
       font-size: 14px;
       margin-right: 4px;
     }
+    @media (max-width:767px){
+      .Profile .sec {
+        flex-direction: column;
+        justify-content: center;
+      }
+      .Profile .sec .level {
+        width: 100%;
+        border:none;
+      }
+    }
 
 
 
