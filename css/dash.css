@@ -616,6 +616,9 @@ border-color: orange transparent transparent transparent;
   padding:5px;
   border-radius:15px
  }
+ .Setting .sec .sheck .check-icon:hover{
+  cursor: pointer;
+ }
  .Setting .sec .sheck .check-icon i{
   background-color:white;
   width:20px;
@@ -662,6 +665,223 @@ cursor: pointer;
   padding:15px 0px;
 
  }
+ .Setting  .Info form {
+  color:gray;
+  margin-top:20px
+ }
+ .Setting  .Info input ,.Setting .social input{
+  display:block;
+  margin:10px 0;
+  width:100%;
+  border-radius:6px;
+  padding:5px 10px;
+  border:1px solid rgba(128, 128, 128, 0.363)
+ }
+ .Setting  .Info label{
+  font-size:14px
+ }
+ .Setting  .Info input::placeholder,.Setting .social input::placeholder{
+  font-size:12px
+ }
+ .Setting .social input{
+  padding:10px 40px;
+ }
+ .Setting .social i {
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  color:var(--grey-color) ;
+  border-right: 1px solid var(--grey-color) ;
+  padding-right: 10px;
+  padding-left: 5px;
+  transition:.5s 
 
+
+  ;
+
+ }
 
   /*end  section setting  */
+  /* start Project  */
+  .Project .sec{
+height: 350px;
+  }
+  .Project .con  h3{
+font-size:18px;
+font-weight: 300;
+  }
+  .Project .sec span.date{
+    right:10px;
+    top:10px;
+    font-size:14px;
+    color:var(--grey-color)
+  }
+  .Project .sec .users{
+    margin-top:45px
+  }
+  .Project .sec img{
+    width:45px;
+border-radius: 45px;
+border:3px solid white;
+cursor: pointer;
+position: relative;
+  }
+  .Project .sec img:not(:first-child){
+    margin-left:-20px
+  }
+  .Project .sec img:hover{
+    z-index:4
+  }
+  .Project .sec ul {
+    margin-top:45px;
+    padding:  20px 0;
+    justify-content: flex-end;
+    border-top: 1px solid rgba(128, 128, 128, 0.178);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.178);
+
+  }
+  .Project .sec ul li {
+    font-size:15px;
+    background-color: rgba(128, 128, 128, 0.226);
+padding: 5px 10px;
+border-radius: 10px;
+margin-left: 10px;
+  }
+  .Project .sec .money{
+justify-content:space-between ;
+padding: 20px 0;
+  }
+
+
+ .Project .sec .money span:nth-child(2){
+  font-size:15px;
+  color:var(--grey-color);
+  font-weight: 500;
+
+
+ }
+ .Project .sec .money span:nth-child(1){
+  width:250px ;
+  background-color:rgba(128, 128, 128, 0.226);
+height: 8px;
+border-radius: 10px;
+
+
+ }
+ .Project .sec:nth-child(1) .money span:nth-child(1)::after ,  .Project .sec:nth-child(5) .money span:nth-child(1)::after {
+  content:"";
+  position: absolute;
+  left:0;
+  width:50%;
+  background-color:red;
+height: 100%;
+border-radius: 10px;
+
+ }
+ .Project .sec:nth-child(3) .money span:nth-child(1)::after ,  .Project .sec:nth-child(7) .money span:nth-child(1)::after {
+  content:"";
+  position: absolute;
+  left:0;
+  width:40%;
+  background-color:green;
+height: 100%;
+border-radius: 10px;
+
+ }
+ .Project .sec:nth-child(2) .money span:nth-child(1)::after ,  .Project .sec:nth-child(8) .money span:nth-child(1)::after {
+  content:"";
+  position: absolute;
+  left:0;
+  width:70%;
+  background-color:blue;
+height: 100%;
+border-radius: 10px;
+
+ }
+ .Project .sec:nth-child(4) .money span:nth-child(1)::after ,  .Project .sec:nth-child(9) .money span:nth-child(1)::after {
+  content:"";
+  position: absolute;
+  left:0;
+  width:100%;
+  background-color:green;
+height: 100%;
+border-radius: 10px;
+
+ }
+ .Project .sec:nth-child(6) .money span:nth-child(1)::after {
+  content:"";
+  position: absolute;
+  left:0;
+  width:50%;
+  background-color:blue;
+height: 100%;
+border-radius: 10px;
+
+ }
+    /* end  Project  */
+    
+    /* start profile */
+    .Profile .sec{
+      /* grid-area: 1/span(2); */
+      width:100%;
+      background-color:white ;
+    }
+    .Profile .sec img {
+      width:120px;
+    }
+    .Profile .sec .level{
+      width:35%;
+      flex-direction: column;
+      border-right: 2px solid rgba(128, 128, 128, 0.151)
+    }
+    .Profile .sec .level span:first-of-type{
+      font-size:20px;
+      /* color:var(--grey-color); */
+      font-weight: 600;
+      padding: 15px 0
+    }
+    .Profile .sec .level span:nth-child(3){
+      font-size:16px;
+      color:var(--grey-color);
+      font-weight: 500;
+      padding-bottom: 15px ;
+    }
+    .Profile .sec .level span:nth-child(4){
+      background-color:rgba(128, 128, 128, 0.253);
+      /* padding-bottom: 15px ; */
+      width: 180px;
+      height: 7px;
+      border-radius: 10px;
+
+position:relative
+
+    }
+    .Profile .sec .level span:nth-child(4)::after{
+      content:"";
+      position:absolute;
+      width: 70%;
+      height: 100%;
+      background-color: var(--blue-alt-color);
+      left: 0;
+      border-radius: 10px;
+      top: 0;
+
+    }
+    .Profile .sec .level span:last-child{
+      font-size:14px;
+      color:var(--grey-color);
+      font-weight: 400;
+      padding: 15px 0
+    }
+    .Profile .sec .level .star {
+      padding-top: 15px ;
+    }
+    .Profile .sec .level .star i{
+      color: var(--orange-color);
+      font-size: 14px;
+      margin-right: 4px;
+    }
+
+
+
+    /* end profile */

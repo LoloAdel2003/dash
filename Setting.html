@@ -105,6 +105,24 @@
                 </h3>
                 <span>General Information About Your Account</span>
             </div>
+            <form action="">
+                <div>
+                    <label for="first">First Name </label>
+                    <input type="text" id="first" placeholder="First Name ">
+                </div>
+                <div>
+                    <label for="last">Last Name </label>
+                    <input type="text" id="last" placeholder="Last Name ">
+                </div>
+                <div>
+                    <label for="Email">Email </label>
+                    <input type="email" id="Email" placeholder="o@nn.sa">
+                </div>
+
+                
+                
+
+            </form>
 
         </div>
 
@@ -172,8 +190,45 @@
 
                 </span>
             </div>
+            <form action="">
+                             <div class="p-relative social" >
+                                <i class="p-absolute fab fa-twitter"></i>
+                                <input type="text" placeholder="Twitter username" class="inputsocial1">
+                             </div> 
+                             <div class="p-relative social" >
+                                <i class="p-absolute fab fa-facebook"></i>
+                                <input type="text" placeholder="Facebook username"  class="inputsocial1">
+                             </div>
+                             <div class="p-relative social" >
+                                <i class="p-absolute fab fa-linkedin"></i>
+                                <input type="text" placeholder="Linkedin username"  class="inputsocial1"   >
+                             </div>  
+                             <div class="p-relative social" >
+                                <i class="p-absolute fab fa-youtube"></i>
+                                <input type="text" placeholder="Youtube username"  class="inputsocial1">
+                             </div>  
+
+            </form>
+            <script>
+               window.addEventListener("click", (e) => {
+    if (e.target.className === "inputsocial1") {
+        if (e.target.previousElementSibling) {
+            e.target.previousElementSibling.style.color = "black";
+            e.target.previousElementSibling.id = "inputsocial2";
+        }
+    } else {
+        let previousLabel = document.getElementById("inputsocial2");
+        if (previousLabel) {
+            previousLabel.style.color = "#888";
+            previousLabel.removeAttribute("id"); // إزالة `id` بدلاً من تعيينه كـ `""`
+        }
+    }
+});
+
+               
+            </script>
         </div>
-        <div class=" sec Widgets rad-6 container bg-white" > <!--section 5-->
+        <!-- <div class=" sec Widgets rad-6 container bg-white" > 
             <div class="con">
                 <h3>Widgets Control
                 </h3>
@@ -183,7 +238,7 @@
             </div>
 
         </div>
-        <div class=" sec Backup rad-6 container bg-white" > <!--section 6-->
+        <div class=" sec Backup rad-6 container bg-white" > 
            
             <div class="con">
                 <h3>Backup Manager
@@ -194,7 +249,7 @@
             </div>
 
         </div>
-                  
+                   -->
 
 
 
@@ -207,5 +262,82 @@
     </div>
 </div>
     <script src="js/dash.js"></script>
+    <script>
+        let ture = document.getElementById("True");
+let falseElement = document.getElementById("False");
+let checkicon = document.getElementById("check-icon");
+
+checkicon.onclick = () => {
+    let x = window.getComputedStyle(ture).getPropertyValue("z-index"); 
+    let zIndexValue = parseInt(x) || -1; // Convert to number or default to -1
+
+    if (zIndexValue === -1) {  
+        ture.style.zIndex = "4";  
+
+        // Remove 'left' only if it's set
+        if (window.getComputedStyle(ture).getPropertyValue("left") !== "auto") {
+            ture.style.removeProperty("left");
+            falseElement.style.removeProperty("left");
+
+        }
+
+        ture.style.right = "5px"; 
+        falseElement.style.right = "5px";
+        checkicon.style.backgroundColor = "var(--blue-color)";
+
+    } else {
+        ture.style.zIndex = "-1";  
+
+        // Remove 'right' only if it's set
+        if (window.getComputedStyle(ture).getPropertyValue("right") !== "auto") {
+            ture.style.removeProperty("right");
+            falseElement.style.removeProperty("right");
+
+        }
+
+        ture.style.left = "5px"; 
+        falseElement.style.left = "5px";
+        checkicon.style.backgroundColor = "rgba(128, 128, 128, 0.26)";
+    }
+};
+let ture1 = document.getElementById("True1");
+let falseElement1 = document.getElementById("False1");
+let checkicon1 = document.getElementById("check-icon1");
+
+checkicon1.onclick = () => {
+    let x = window.getComputedStyle(ture1).getPropertyValue("z-index"); 
+    let zIndexValue = parseInt(x) || -1; // Convert to number or default to -1
+
+    if (zIndexValue === -1) {  
+        ture1.style.zIndex = "4";  
+
+        // Remove 'left' only if it's set
+        if (window.getComputedStyle(ture1).getPropertyValue("left") !== "auto") {
+            ture1.style.removeProperty("left");
+            falseElement1.style.removeProperty("left");
+
+        }
+
+        ture1.style.right = "5px"; 
+        falseElement1.style.right = "5px";
+        checkicon1.style.backgroundColor = "var(--blue-color)";
+
+    } else {
+        ture1.style.zIndex = "-1";  
+
+        // Remove 'right' only if it's set
+        if (window.getComputedStyle(ture1).getPropertyValue("right") !== "auto") {
+            ture1.style.removeProperty("right");
+            falseElement1.style.removeProperty("right");
+
+        }
+
+        ture1.style.left = "5px"; 
+        falseElement1.style.left = "5px";
+        checkicon1.style.backgroundColor = "rgba(128, 128, 128, 0.26)";
+    }
+};
+//\
+    </script>
 </body>
 </html>
