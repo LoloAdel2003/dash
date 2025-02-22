@@ -703,6 +703,7 @@ cursor: pointer;
 
   /*end  section setting  */
   /* start Project  */
+  
   .Project .sec{
 height: 350px;
   }
@@ -818,6 +819,27 @@ height: 100%;
 border-radius: 10px;
 
  }
+ @media (max-width:767px){
+  .Project .sec{
+    height: fit-content;
+      }
+      .Project .sec ul{
+        flex-direction: column;
+        
+      }
+      .Project .sec ul li {
+        width:fit-content;
+        margin-bottom:10px
+      }
+      .Project .sec .money {
+        flex-direction: column;
+
+      }
+      .Project .sec .money span {
+        margin-bottom:15px;
+
+      }
+}
     /* end  Project  */
     
     /* start profile */
@@ -830,6 +852,7 @@ border-radius: 10px;
       width:120px;
     }
     .Profile .sec .level{
+      margin-right:20px;
       width:35%;
       flex-direction: column;
       border-right: 2px solid rgba(128, 128, 128, 0.151)
@@ -885,13 +908,49 @@ position:relative
       .Profile .sec {
         flex-direction: column;
         justify-content: center;
+        height:fit-content
       }
       .Profile .sec .level {
         width: 100%;
         border:none;
       }
+      .Profile .sec .information .info{
+        margin-top: 10px;
+        text-align: center;
+      }
+      .Profile .sec .information .info .name {
+        flex-direction: column;
+        justify-content: center;
+      }
+      .Profile .sec .information .info .name p {
+        margin-bottom: 5px;
+      }
+
     }
 
+    .Profile .sec .information {
+      padding-left:10px;
+    }
+    .Profile .sec .information .info span.A{
+      color:var(--grey-color)
+      ;
+      font-weight: bold;
+    }
+    .Profile .sec .information .info .name {
+      margin:20px 0;
+      padding:0;
+      border-bottom:1px solid rgba(128, 128, 128, 0.377);
+      padding-bottom:30px;
+      justify-content: space-between;
+    }
+    .Profile .sec .information .info .name p {
+margin-right:30px
+    }
+    .Profile .sec .information .info .name p span{
+      color: var(--grey-color);
+      font-size: 14px;
+      padding-left: 2px;
+    }
 
 
     /* end profile */
