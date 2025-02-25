@@ -1303,6 +1303,7 @@ transition: all .5s;
     } */
     .Plans .sec {
       height: fit-content;
+      background-color: white;
     }
     .Plans .free span:first-child {
       display: block;
