@@ -345,6 +345,9 @@ color:
   margin-top: 10px;
   position:relative ;
 }
+.Dashbord .content{
+  height: 80px;
+}
 .Quick form input:first-child,.Quick form textarea{
   width: 100%;
   margin: 10px;
@@ -925,6 +928,7 @@ position:relative
       .Profile .sec .information .info .name p {
         margin-bottom: 5px;
       }
+      
 
     }
 
@@ -939,9 +943,12 @@ position:relative
     .Profile .sec .information .info .name {
       margin:20px 0;
       padding:0;
-      border-bottom:1px solid rgba(128, 128, 128, 0.377);
       padding-bottom:30px;
       justify-content: space-between;
+    }
+    .Profile .sec .information .info .name:not(.billing) {
+      border-bottom:1px solid rgba(128, 128, 128, 0.199);
+
     }
     .Profile .sec .information .info .name p {
 margin-right:30px
@@ -952,5 +959,417 @@ margin-right:30px
       padding-left: 2px;
     }
 
+    @media (max-width:767px){
+      .Profile .sec .information .info .name{
+        border:none;
+        padding-bottom:0px;
+
+      }
+      .Profile .sec .information .info{
+        padding-top:20px;
+        border-top:1px solid rgba(128, 128, 128, 0.199);
+      }
+    }
+
 
     /* end profile */
+    /* start course  */
+    .courses{
+      grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+      height: fit-content;
+
+    }
+    .courses .sec{
+      background-color: white;
+
+padding-top:80%;
+height: fit-content;
+    }
+  
+   
+   
+    .courses .sec img:nth-child(1){
+      position: absolute;
+      width: 100%;
+      height: 50%;
+      left: 0;
+      top: 0;
+
+
+    }
+    .courses .sec img:nth-child(2) {
+      width:50px;
+      border-radius: 50px;
+      border-color:2px solid white;
+position: absolute;
+
+top:15px
+
+
+    }
+    .courses .sec .cont span.mastering{
+      font-size: 15px;
+      font-weight: bold;
+      padding:20px 0;
+
+    }
+    .courses .sec .cont p{
+      font-size: 12px;
+      padding-top: 15px;
+      color:var(--grey-color);
+      line-height: 1.5;
+    }
+    .courses .sec  .course-info{
+      position:absolute;
+
+    }
+    .courses .sec .money{
+      justify-content: space-between;
+      font-size:14px;
+      margin-top:40px;
+      color:var(--grey-color);
+padding: 10px 0px;
+border-top:1px solid rgba(128, 128, 128, 0.219)
+    }
+    .courses .sec  .course-info{
+      position:absolute;
+      color:white;
+      background-color: var(--blue-color);
+      /* height: 30px; */
+      padding: 5px;
+      border-radius: 6px;
+      font-size: 12px;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+
+
+    }
+    /* @media (max-width:767px){
+     
+      } */
+      @media (min-width:460px) and (max-width:574px){
+        .courses .sec{
+          padding-top:45%;
+          
+        }
+        .courses .sec img:nth-child(1){
+          width: 75%;
+        }
+       }
+
+    /* end course */
+    /* start friends  */
+    .friend{
+      grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+      height: fit-content;
+
+    }
+    .friend .sec {
+height: fit-content;
+    }
+    .friend .sec i {
+      color:rgb(104, 102, 102);
+      font-size: 14px;
+      background-color: rgba(128, 128, 128, 0.144);
+padding: 10px;
+border-radius: 50%;
+cursor: pointer;
+
+    }
+    .friend .sec i:hover{
+      background-color: var(--blue-color);
+      color: white;
+    }
+    .friend .sec .name1 {
+      justify-content: center;
+      flex-wrap: wrap;
+      /* width: 100%; */
+      text-align: center;
+    }
+    .friend .sec .name1  span {
+      display: block;
+      width: 100%;
+      padding: 5px 0;
+    }
+    .friend .sec img{
+      display: block;
+      width: 100px;
+      border-radius: 50%;
+      position: static;
+      padding-bottom: 15px;
+      
+    }
+    .friend .sec .name1 span:first-of-type{
+      font-size: 17px;
+      font-weight: bold;
+    }
+    .friend .sec .name1 span:nth-child(3){
+      font-weight: 200;
+      font-size: 14px;
+      color:var(--grey-color);
+      /* border-bottom: 1px solid rgba(128, 128, 128, 0.322); */
+    }
+    .friend .sec .num {
+      flex-direction: column;
+      border-bottom: 1px solid rgba(128, 128, 128, 0.315);
+      border-top: 1px solid rgba(128, 128, 128, 0.315);
+padding:5px 0;
+margin-top: 10px;
+
+    }
+    .friend .sec .num span i {
+      background-color: white;
+      color: black;
+
+
+    }
+    .friend .sec .num span {
+      font-size:15px;
+    }
+    .friend .sec .bot {
+      margin-top: 20px;
+      justify-content: space-between;
+    }
+    .friend .sec .bot span {
+      font-size: 14px;
+      color:var(--grey-color)
+
+    }
+   .friend .sec .bot button{
+color: white;
+border: none;
+background-color: var(--red-color);
+padding: 5px;
+border-radius: 10px;
+font-size:14px;
+cursor: pointer;
+    }
+    .friend .sec .bot button:hover{
+      background-color: rgba(141, 5, 5, 0.918);
+
+    }
+    .friend .sec .bot a button {
+      background-color: var(--blue-color);
+      padding: 5px 15px;
+    }
+    .friend .sec .bot a button:hover{
+      background-color: var(--blue-alt-color);
+    }
+
+    /* end friends  */
+    /* start file  */
+    .File{
+      grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+      height: fit-content;
+    }
+    .File .sec {
+      background-color: white;
+      height:fit-content
+    }
+    .File .sec i{
+      color: var(--grey-color);
+      font-size: 18px;
+      cursor: pointer;
+    }
+    .File .sec i:hover {
+      color: var(--blue-color);
+    }
+    .File .sec img {
+width: 80px;
+display: block;
+margin: 20px auto;
+transition: all .5s;
+
+    }
+    .File{
+      order:1;
+    }
+    .File .sec img:hover {
+      transform: rotate(20deg);
+    }
+    .File .sec .imgess{
+      display: block;
+    }
+    .File .sec .imgess span {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    .File .sec .name1 {
+      color: var(--grey-color);
+      margin: 20px 0;
+      display: block;
+    }
+    .File .sec .size {
+      margin-top:20px;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-top :1px solid rgba(128, 128, 128, 0.212);
+      color:var(--grey-color);
+      font-size: 14px;
+
+      
+    }
+    .sectionpage .side {
+      order:2;
+      background-color: white;
+      margin-left: 20px;
+      /* box-shadow: ; */
+      border-radius: 6px;
+      height: fit-content;
+
+
+
+    }
+    .sectionpage .side  span {
+      display: block;
+      font-size: 24px;
+      font-weight: bold;
+      padding: 10px 0;
+    }
+    .sectionpage .side .stat {
+      justify-content: space-between;
+      border: 1px solid rgba(128, 128, 128, 0.205);
+      padding: 10px;
+      border-radius: 6px;
+      align-items: center;
+      align-items: center;
+      margin-bottom: 15px;
+      /* color: orange; */
+    }
+    .sectionpage .side .stat .right {
+      font-size: 12px;
+      color: var(--grey-color);
+
+    }
+  
+    .sectionpage .side .left span{
+      display: block;
+      font-size: 12px;
+      font-weight: 100;
+      margin-left: 10px;
+      padding: 0;
+    }
+    .sectionpage .side .left span:last-child{
+      color: var(--grey-color);
+    }
+    .sectionpage .side .left i{
+      color: var(--blue-color);
+      padding: 10px;
+      background-color:rgba(0, 0, 255, 0.116) ;
+    }
+    
+
+    @media (max-width:767px){
+      .sectionpage {
+        flex-direction: column;
+
+
+      }
+      .sectionpage .File{
+        order:3;
+        width: 100%;
+        margin-top: 20px;
+      }
+      .sectionpage .side{
+        width: 100%;
+        margin-left: 0px;
+      }
+    }
+    /* end file  */
+    /* start plans  */
+    /* grid-template-columns: repeat(auto-fill,minmax(200px,1fr)); */
+    .Plans {
+      grid-template-columns: repeat(auto-fill,minmax(450px,1fr));
+    }
+    .Plans .free {
+      background-color: var(--green-color);
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      height: 150px;
+
+    }
+    /* .Plans .free::after {
+      content: "";
+      position: absolute;
+      width: 90%;
+      height: 80%;
+      border: 3px solid white;
+      left: 5%;
+      top: 7%;
+
+    } */
+    .Plans .sec {
+      height: fit-content;
+    }
+    .Plans .free span:first-child {
+      display: block;
+      padding-top: 30px;
+      margin-bottom:10px ;
+    }
+    .Plans .free div {
+      border: 3px solid white;
+      width: 95%;
+      height: 120px;
+      position: absolute;
+      top: 15px;
+      margin: auto;
+      left: 2.5%;
+
+    }
+
+.Plans .free span:last-child {
+  display: block;
+
+font-size: 30px;
+padding-bottom: 30px;
+}
+.Plans .txt {
+  justify-content: space-between;
+  margin: 30px 0;
+  padding-bottom: 10px;
+
+  border-bottom: 1px solid rgba(128, 128, 128, 0.212);
+}
+.Plans .txt .txtinner i{
+color: var(--green-color);
+font-size: 16px;
+font-weight: bold;
+}
+.Plans .txt .false-icon{
+  color: var(--red-color);
+}
+.Plans .txt .txtinner span {
+  font-size: 15px;
+  margin-left: 5px;
+}
+.Plans .txt .ask-icon{
+color: var(--grey-color);
+}
+ 
+
+.Plans .sec button{
+color: white;
+background-color: var(--green-color);
+border-radius: 10px;
+padding: 10px 15px;
+border: none;
+}
+.Plans .sec:nth-child(2) button,.Plans .sec:nth-child(2) .free {
+  background-color: var(--blue-color);
+
+}
+.Plans .sec:nth-child(3) button,.Plans .sec:nth-child(3) .free {
+  background-color: var(--orange-color);
+
+}
+.Plans .sec:nth-child(3) button{
+  display: none;
+}
+.Plans .curent{
+  text-align: center;
+  color: gray;
+}
+    /* end plans  */
