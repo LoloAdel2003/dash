@@ -1280,7 +1280,12 @@ transition: all .5s;
     /* start plans  */
     /* grid-template-columns: repeat(auto-fill,minmax(200px,1fr)); */
     .Plans {
-      grid-template-columns: repeat(auto-fill,minmax(450px,1fr));
+      grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+    }
+    @media (max-width :600px){
+      .Plans {
+        grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+      }
     }
     .Plans .free {
       background-color: var(--green-color);
